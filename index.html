@@ -3,23 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercedes OS Dashboard</title>
+  <title>MB.OS Dashboard Simulation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="dashboard">
+
+    <!-- Top Info Bar -->
     <div class="top-bar">
       <span class="time">12:45 PM</span>
       <span class="weather">☀ 25°C</span>
     </div>
 
-    <div class="speedometer">
-      <div class="speed">120 km/h</div>
-      <div class="rpm">3000 RPM</div>
+    <!-- Gauges Section -->
+    <div class="gauges">
+      <div class="speedometer">
+        <div class="dial">
+          <div class="needle"></div>
+          <div class="speed-text">0 km/h</div>
+        </div>
+        <div class="label">Speed</div>
+      </div>
+
+      <div class="rpm-meter">
+        <div class="dial">
+          <div class="needle-rpm"></div>
+          <div class="rpm-text">0 RPM</div>
+        </div>
+        <div class="label">RPM</div>
+      </div>
+
+      <div class="fuel-temp">
+        <div class="indicator">
+          <div>Fuel: 75%</div>
+          <div>Temp: 90°C</div>
+        </div>
+      </div>
     </div>
 
+    <!-- Media Player -->
     <div class="media-player">
-      <div class="song">Now Playing: “Drive”</div>
+      <div class="song">🎵 Now Playing: “Drive”</div>
       <div class="controls">
         <button>⏮️</button>
         <button>⏯️</button>
@@ -27,9 +51,13 @@
       </div>
     </div>
 
+    <!-- Navigation Map -->
     <div class="navigation">
-      <span>Destination: Downtown</span>
+      <div class="map">
+        <div class="map-destination">Downtown</div>
+      </div>
     </div>
+
   </div>
 
   <script src="script.js"></script>
